@@ -40,9 +40,11 @@
                 background-color: #393f4d;
                 color: #d4d4dc;
             }
-            button:hover {
+            button:hover,
+            button:focus {
                 background-color: #feda6a;
                 color: #1d1e22;
+                outline: none;
             }
             @media (min-width: 601px) {
                 ul {
@@ -63,8 +65,32 @@
     <body>
         <main>
             <h1>Drawn to the Flame Soundboard</h1>
-            <p>Dedicated to a fantastic <a href="https://drawntotheflamepodcast.blogspot.com/">podcast</a> and one of it's inimitable hosts <a href="https://twitter.com/eph_bee">Frank</a>.</p>
+            <p>Dedicated to a fantastic <a href="https://drawntotheflamepodcast.blogspot.com/">podcast</a> and it's inimitable hosts <a href="https://twitter.com/eph_bee">Frank</a> and <a href="https://twitter.com/unitled">Peter</a>.</p>
             <ul id="sounds">
+                <li>
+                    <audio preload="auto">
+                        <source src="sounds/im your host.mp3">
+                    </audio>
+                    <button type="button">Frank</button>
+                </li>
+                <li>
+                    <audio preload="auto">
+                        <source src="sounds/its me peter.mp3">
+                    </audio>
+                    <button type="button">Peter</button>
+                </li>
+                <li>
+                    <audio preload="auto">
+                        <source src="sounds/its me matt newman.mp3">
+                    </audio>
+                    <button type="button">Matt Newman</button>
+                </li>
+                <li>
+                    <audio preload="auto">
+                        <source src="sounds/glass of cool beer.mp3">
+                    </audio>
+                    <button type="button">Beer</button>
+                </li>
                 <li>
                     <audio preload="auto">
                         <source src="sounds/bold thinking but there we go.mp3">
